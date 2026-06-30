@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #FAFAF8;
+  --color-bg-alt: #F1EFE9;
+  --color-ink: #14181F;
+  --color-ink-soft: #565C66;
+  --color-teal: #2A5C5C;
+  --color-teal-soft: #E4ECEA;
+  --color-amber: #C97C3D;
+  --color-amber-soft: #F6E8DB;
+  --color-line: #E4E1D8;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-line);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+html.dark body {
+  background-color: #0E1115;
+  color: #F1EFE9;
+}
+
+html.dark {
+  --color-bg: #0E1115;
+  --color-bg-alt: #161A20;
+  --color-ink: #F1EFE9;
+  --color-ink-soft: #9AA1AC;
+  --color-teal-soft: #16302E;
+  --color-amber-soft: #2E2114;
+  --color-line: #262C34;
+}
