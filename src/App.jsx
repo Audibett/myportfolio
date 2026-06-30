@@ -9,6 +9,9 @@ import Education from './components/Education'
 import Certifications from './components/Certifications'
 import Services from './components/Services'
 import TechStack from './components/TechStack'
+import Testimonials from './components/Testimonials'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -24,7 +27,10 @@ function App() {
         <Certifications />
         <Services />
         <TechStack />
+        <Testimonials />
+        <Contact />
       </main>
+      <Footer />
     </ThemeProvider>
   )
 }
