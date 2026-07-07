@@ -117,8 +117,8 @@ function ProjectCard({ project }) {
       }`}
     >
       {/* Screenshot placeholder */}
-      <div className="bg-line/40 min-h-[200px] flex items-center justify-center relative">
-        <div className="flex flex-col items-center gap-2 text-ink-soft/60">
+      <div className="bg-line/40 min-h-[200px] flex items-center justify-center relative" role="img" aria-label={`Screenshot placeholder for ${project.title}`}>
+        <div className="flex flex-col items-center gap-2 text-ink-soft/60" aria-hidden="true">
           <ImageOff size={22} />
           <span className="font-mono text-[11px]">Screenshot placeholder</span>
         </div>

@@ -1,4 +1,5 @@
 import { ThemeProvider } from './context/ThemeContext'
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -16,8 +17,14 @@ import Footer from './components/Footer'
 function App() {
   return (
     <ThemeProvider>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-ink focus:text-bg focus:px-4 focus:py-2 focus:rounded-full focus:text-sm"
+      >
+        Skip to content
+      </a>
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <About />
         <Skills />
@@ -31,6 +38,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <Analytics />
     </ThemeProvider>
   )
 }

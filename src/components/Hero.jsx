@@ -4,7 +4,7 @@ import { Download, Mail, ArrowRight } from 'lucide-react'
 export default function Hero() {
   return (
     <section id="top" className="relative pt-40 pb-28 px-6 overflow-hidden">
-      {/* Ambient route path running behind the hero content */}
+    
       <svg
         className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.35]"
         viewBox="0 0 1200 800"
@@ -36,13 +36,13 @@ export default function Hero() {
             </p>
 
             <h1 className="font-display font-semibold text-5xl sm:text-6xl leading-[1.05] tracking-tight text-ink">
-              Hi, I'm Audia.
+              Hi, I'm Audia Jepkirui 
               <br />
               <span className="text-ink-soft">I build software that moves.</span>
             </h1>
 
             <p className="mt-6 font-mono text-sm sm:text-base text-teal tracking-tight">
-              Full-Stack Developer · Mobile Developer · UI/UX Enthusiast
+              Full-stack Developer · Mobile Developer · UI/UX Enthusiast
             </p>
 
             <p className="mt-5 text-base sm:text-lg text-ink-soft max-w-xl leading-relaxed">
@@ -81,9 +81,9 @@ export default function Hero() {
           <div className="shrink-0 mx-auto md:mx-0">
             <div className="relative h-44 w-44 sm:h-56 sm:w-56">
               <div className="absolute inset-0 rounded-[2rem] bg-teal-soft rotate-6" />
-              <div className="absolute inset-0 rounded-[2rem] overflow-hidden border border-line bg-bg-alt grid place-items-center">
+              <div className="absolute inset-0 rounded-[2rem] overflow-hidden border border-line bg-bg-alt grid place-items-center" role="img" aria-label="Profile photo placeholder for Audia">
                 {/* Placeholder avatar — swap src with a real photo */}
-                <span className="font-display text-5xl text-ink-soft">A</span>
+                <span className="font-display text-5xl text-ink-soft" aria-hidden="true">A</span>
               </div>
               <span className="absolute -bottom-2 -right-2 h-4 w-4 rounded-full bg-amber border-4 border-bg" />
             </div>
